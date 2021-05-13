@@ -1,0 +1,20 @@
+.bg {
+    background-image: url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/07/scrolling-gradient.png");
+    background-size: cover;
+}
+
+.bg3a {
+    background-color: #3aafa9;
+}
+
+.bg3c {
+    background-color: #3c3f58;
+}
+
+.bg21 {
+    background-color: #21abe9;
+}
+
+.white-text {
+    color:white;
+}
