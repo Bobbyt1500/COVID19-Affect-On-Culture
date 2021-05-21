@@ -9,7 +9,7 @@
 }
 
 .bg3copacity {
-    background-color:rgba(60, 63, 88, 0.6);
+    background-color:rgba(60, 63, 88, 0.8);
 }
 
 .bg21 {
@@ -23,13 +23,13 @@
 }
 
 .im2 {
-    background-image: url("https://www.mdcthereporter.com/wp-content/uploads/2021/03/graduation_web.jpg");
+    background-image: linear-gradient(rgba(60, 63, 88, 0.6), rgba(60, 63, 88, 0.6)), url("https://www.mdcthereporter.com/wp-content/uploads/2021/03/graduation_web.jpg");
     height: 100vh; 
     background-size: cover;
 }
 
 .im3 {
-    background-image: url("http://www.seattlechildrens.org/globalassets/images/health-and-safety/social/covid19_family_life_social.jpg");
+    background-image: linear-gradient(rgba(60, 63, 88, 0.6), rgba(60, 63, 88, 0.6)), url("http://www.seattlechildrens.org/globalassets/images/health-and-safety/social/covid19_family_life_social.jpg");
     height: 100vh;
     background-size: cover;
 }
@@ -43,4 +43,9 @@
     right: 20px;
     bottom: 20px;
     display: none;
+}
+.navbar > .container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
