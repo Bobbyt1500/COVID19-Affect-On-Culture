@@ -1,7 +1,4 @@
-.bg {
-    background-image: url("https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/07/scrolling-gradient.png");
-    background-size: cover;
-}
+
 
 .bg3a {
     background-color: #3aafa9;
@@ -11,10 +8,39 @@
     background-color: #3c3f58;
 }
 
+.bg3copacity {
+    background-color:rgba(60, 63, 88, 0.6);
+}
+
 .bg21 {
     background-color: #21abe9;
 }
 
+.im1 {
+    background-image: url("https://media.cntraveler.com/photos/5e87b62d1185400008f5b413/master/w_1600%2Cc_limit/Times-Square-new-york-city-quarantine-GettyImages-1208889829.jpg");
+    height: 100vh; 
+    background-size: cover;
+}
+
+.im2 {
+    background-image: url("https://www.mdcthereporter.com/wp-content/uploads/2021/03/graduation_web.jpg");
+    height: 100vh; 
+    background-size: cover;
+}
+
+.im3 {
+    background-image: url("http://www.seattlechildrens.org/globalassets/images/health-and-safety/social/covid19_family_life_social.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
 .white-text {
     color:white;
+}
+
+#scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
 }

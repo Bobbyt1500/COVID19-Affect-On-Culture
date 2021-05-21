@@ -11,69 +11,64 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
     <title>COVID and Culture</title>
   </head>
   <body>
 
     <main class="container mw-100" id = "main-container">
 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand">Focuses:</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#work-culture">Work Culture</a>
+              <a class="nav-link" href="#school-culture">School Culture</a>
+              <a class="nav-link" href="#life-events">Celebrations/Life Events</a>
+              <a class="nav-link" href="#the-arts">The Arts</a>
+              <a class="nav-link" href="#health-fitness">Health and Fitness</a>
+              <a class="nav-link" href="#family-life">Family Life</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <!-- 1 intro -->
-      <row class="row bg21 align-items-center">
-        <div class="col-lg white-text text-center">
+      <row class="row 100vh bg21 im1 align-items-center">
+
+        <div class="col bg3copacity white-text text-center">
+
           <h1 class="display-1 m-4">COVID-19: its effect on American Culture</h1>
 
           <p class="lead m-5">On January 21, 2020 the first COVID-19 case in the United States was confirmed. 
             Soon after, the World Health Organization (WHO) declared COVID-19 a pandemic. People were encouraged to stay home, and limit their contact with others to avoid spreading 
             the virus. Everything began to shut down and move to a virtual setting. This was a massive change to our everyday life and culture.</p>
-
         </div>
+        <!--
         <div class="col-lg">
           <figure class="figure">
-            <img src="https://media.cntraveler.com/photos/5e87b62d1185400008f5b413/master/w_4200,h_2800,c_limit/Times-Square-new-york-city-quarantine-GettyImages-1208889829.jpg" class="figure-img img-fluid rounded" >
             <figcaption class="white-text figure-caption">An almost empty Times Square during the COVID-19 Pandemic. Image via <a href="https://www.cntraveler.com/gallery/15-photos-of-new-york-city-during-coronavirus-from-empty-times-square-to-a-deserted-subway">cntraveler.com</a></figcaption>
           </figure>
         </div>
-      </row>
+      -->
 
-      <!-- 2 The arts -->
-      <row class="row align-items-center">
-
-        <div class="col-xxl text-center order-xxl-2">
-          <h1 class="display-1 m-4">The Arts</h1>
-
-          <p class="lead m-5">Due to the pandemic things like concerts, art galleries, and other events deemed non-essential
-            have been postponed, cancelled, or closed. This has had a massive impact on the creative sector and its audience. It is said that in "film, advertising, and fashion as well as creative occupations such as musicians, artists, performers, and designers... we estimate losses of 2.7 million jobs and more than $150 billion in sales" 
-            (<a href="https://www.brookings.edu/research/lost-art-measuring-covid-19s-devastating-impact-on-americas-creative-economy/">brookings.edu</a>). Inorder to keep the arts alive, artists have had to use their creativity to find new ways of sharing their work online. Two very succesful new ideas have been virtual concerts and online musuem gallerys. In addition to helping the artist, 
-            people who may not have been able to make an in-person event before could now attend. 
-            Non-performing artists have also found new ways to share their work online. Videos of 
-            talented artists creating their work have recently became popular on social media. These 
-            artists have created masterclasses and workshops too for people looking to get into the hobby or advance their skills. </p>
-        
+        <row class="row">
+          <div class="col text-end">
+            <figcaption class="white-text my-1 figure-caption">An almost empty Times Square during the COVID-19 Pandemic. Image via <a href="https://www.cntraveler.com/gallery/15-photos-of-new-york-city-during-coronavirus-from-empty-times-square-to-a-deserted-subway">cntraveler.com</a></figcaption>
           </div>
-
-        <div class="col-xxl h-100 bg3c text-center order-xxl-1">
-
-          <h1 class="display-2 mt-4 mb-2 white-text">Exercise</h1>
-          <p class="lead white-text mb-5">Read <a href="https://www.today.com/tmrw/how-livestream-concerts-are-helping-musicians-impacted-covid-19-t201913" target="_blank">How livestream concerts are helping musicians impacted by COVID-19</a> 
-          then answer the questions below:</p>
-
-          <div class="card my-5 mx-auto" style="width: 70%; height: 60%">
-            <div class="card-body">
-              <h2 class="display-6 my-5" id="ex1question"></h2>
-              <button type="button" id="ex10" class="btn btn-primary btn-lg ex1btn"></button>
-              <button type="button" id="ex11" class="btn btn-primary btn-lg ex1btn"></button>
-              <p class="display-1 fs-3 my-3" id="ex1score">Score: 0/0</p>
-              <button type="button" id="ex1reset" class="btn btn-primary btn-lg" onclick="resetEX1()">Retry</button>
-            </div>
-          </div>
-
-        </div>
+        </row>
       </row>
 
       <!-- 3 Work life -->
-      <row class="row align-items-center">
+      <row class="row align-items-center" id="work-culture">
 
-        <div class="col-xxl text-center">
+        <div class="col-md text-center">
           <h1 class="display-1 m-4">Work Culture</h1>
 
           <p class="lead m-5">
@@ -90,9 +85,20 @@
           </p>
         </div>
 
-        <div class="col-xxl h-100 bg3c text-center">
+        <div class="col-md text-center">
+          <figure class="figure">
+            <img src="http://cdn.statcdn.com/Infographic/images/normal/21682.jpeg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">Image via <a href="https://www.statista.com/chart/21682/attitudes-on-working-from-home-in-the-us/">statista.com</a></figcaption>
+          </figure>
+        </div>
 
-          <h1 class="display-2 mt-4 mb-2 white-text">Exercise</h1>
+      </row>
+
+      <!-- Work Culture Activity-->
+      <row class="row align-items-center">
+        <div class="col h-100 bg3c text-center">
+
+          <h1 class="display-2 mt-4 mb-2 white-text">Activity #1</h1>
           <p class="lead white-text mb-5">Read <a href="https://blog.webex.com/video-conferencing/the-impact-video-has-on-company-culture/" target="_blank">The Impact Video has on Company Culture</a> 
           then answer the questions below:</p>
 
@@ -110,12 +116,74 @@
           </div>
 
         </div>
+      </row>      
+
+      
+      <!-- 5 Education and School-->
+
+      <row class="row align-items-center" id="school-culture">
+        <div class="col-lg text-center">
+          
+          <h1 class="display-1 m-4">Education and School Culture</h1>
+
+          <p class="lead my-4">
+            Perhaps one of the most difficult areas to convert to virtual is education.
+            Education for younger children is especially difficult as they are not used to using technology for work.
+            Both teachers and students have had to work together to adapt to the new reality of virtual learning.
+            Before the pandemic, it was common for teachers to create hands on, physical learning. 
+            Now, students have to learn from mostly presentations. 
+            Students also can't collaborate as much. 
+            Usually, students could easily work together on a project. 
+            However, being far apart, this has proven to be a little more difficult.
+            
+          </p>
+
+          <p class="lead my-4">
+            In addition to the new changes with learning, school events and extracurriculars have also been affected.
+            For example, many schools have a field day where students can all get together outside and play games.
+            This is an event that many students look forward to once it gets around the end of the year.
+            Unfortunately, events like these have been cancelled as they just aren't possible to arrange.
+            Clubs and sports have also had a similar problem.
+            Many students look forward to their sport as it is a big part of their lives. 
+            With the COVID-19 Pandemic, many sports have been severly limited or even cancelled.
+
+          </p>
+
+        </div>
+        <div class="col-lg text-center">
+          <figure class="figure">
+            <img src="https://content.presspage.com/uploads/1093/1920_pandemic.jpg?10000" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">The new virutal classroom environment. Image via <a href="https://news.csusm.edu/ask-the-experts-education-covid/">news.csusm.edu</a></figcaption>
+          </figure>
+        </div>
+      </row>
+
+      <!-- School Culture Activity-->
+      <row class="row align-items-center">
+        <div class="col h-100 bg3c text-center">
+          <h1 class="display-2 mt-4 mb-2 white-text">Activity #2</h1>
+          <p class="lead white-text mb-5">Read <a href="https://www.sciencenewsforstudents.org/article/coronavirus-covid-19-changing-school-classes" target="_blank">Here's how COVID-19 is changing classes this year</a>
+          then answer the questions below:</p>
+
+          <div class="card my-5 mx-auto" style="width: 70%; height: 60%">
+            <div class="card-body">
+
+              <h2 class="display-6 my-5" id="ex3question"></h2>
+              <button type="button" id="ex30" class="btn btn-primary btn-lg ex3btn"></button>
+              <button type="button" id="ex31" class="btn btn-primary btn-lg ex3btn"></button>
+              <button type="button" id="ex32" class="btn btn-primary btn-lg ex3btn"></button>
+
+              <p class="display-1 fs-3 my-3" id="ex3score">Score: 0/0</p>
+              <button type="button" id="ex3reset" class="btn btn-primary btn-lg" onclick="resetEX3()">Retry</button>
+            </div>
+          </div>
+        </div>
       </row>
 
       <!-- 4 Life Events-->
-      <row class="row bg21 align-items-center">
+      <row class="row im2 bg21 align-items-center" id="life-events">
 
-        <div class="col-lg text-center">
+        <div class="col-lg h-100 bg3copacity text-center">
           <h1 class="display-2 m-4 white-text">Celebrations/Life Events</h1>
 
           <p class="lead m-5 white-text">
@@ -129,9 +197,9 @@
           </p>
         </div>
 
-        <div class="col-lg text-center">
+        <div class="col-lg d-grid bg3copacity h-100 text-center">
 
-          <div class="accordion" id="accordionExample">
+          <div class="accordion m-auto" id="accordionExample">
             <div class="accordion-item">
 
               <h2 class="accordion-header" id="headingOne">
@@ -187,67 +255,179 @@
           </div>
          </div>
         </div>
+
       </row>
 
-      <!-- 5 Education and School-->
 
-      <row class="row align-items-center">
-        <div class="col-xxl text-center">
-          
-          <h1 class="display-1 m-4">Education and School Culture</h1>
+      <!-- 2 The arts -->
+      <row class="row align-items-center" id="the-arts">
 
-          <p class="lead my-4">
-            Perhaps one of the most difficult areas to convert to virtual is education.
-            Education for younger children is especially difficult as they are not used to using technology for work.
-            Both teachers and students have had to work together to adapt to the new reality of virtual learning.
-            Before the pandemic, it was common for teachers to create hands on, physical learning. 
-            Now, students have to learn from mostly presentations. 
-            Students also can't collaborate as much. 
-            Usually, students could easily work together on a project. 
-            However, being far apart, this has proven to be a little more difficult.
-            
-          </p>
-
-          <p class="lead my-4">
-            In addition to the new changes with learning, school events and extracurriculars have also been affected.
-            For example, many schools have a field day where students can all get together outside and play games.
-            This is an event that many students look forward to once it gets around the end of the year.
-            Unfortunately, events like these have been cancelled as they just aren't possible to arrange.
-            Clubs and sports have also had a similar problem.
-            Many students look forward to their sport as it is a big part of their lives. 
-            With the COVID-19 Pandemic, many sports have been severly limited or even cancelled.
-
-          </p>
-
+        <div class="col-md text-center">
+          <h1 class="display-1 m-4">The Arts</h1>
+          <p class="lead m-5">Due to the pandemic things like concerts, art galleries, and other events deemed non-essential
+            have been postponed, cancelled, or closed. This has had a massive impact on the creative sector and its audience. It is said that in "film, advertising, and fashion as well as creative occupations such as musicians, artists, performers, and designers... we estimate losses of 2.7 million jobs and more than $150 billion in sales" 
+            (<a href="https://www.brookings.edu/research/lost-art-measuring-covid-19s-devastating-impact-on-americas-creative-economy/">brookings.edu</a>). Inorder to keep the arts alive, artists have had to use their creativity to find new ways of sharing their work online. Two very succesful new ideas have been virtual concerts and online musuem gallerys. In addition to helping the artist, 
+            people who may not have been able to make an in-person event before could now attend. 
+            Non-performing artists have also found new ways to share their work online. Videos of 
+            talented artists creating their work have recently became popular on social media. These 
+            artists have created masterclasses and workshops too for people looking to get into the hobby or advance their skills. </p>
+        
+          </div>
         </div>
-        <div class="col-xxl h-100 bg3c text-center">
-          <h1 class="display-2 mt-4 mb-2 white-text">Exercise</h1>
-          <p class="lead white-text mb-5">Read <a href="https://www.sciencenewsforstudents.org/article/coronavirus-covid-19-changing-school-classes" target="_blank">Here's how COVID-19 is changing classes this year</a>
+        <div class="col-md text-center">
+          <figure class="figure">
+            <img src="http://res.heraldm.com/content/image/2020/05/13/20200513000590_0.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">K-pop band SuperM performs virtually for fans at home. Image via <a href="http://www.koreaherald.com/view.php?ud=20200514000646">koreaherald.com</a></figcaption>
+          </figure>
+        </div>
+      </row>
+
+      <!-- The arts Quiz-->
+      <row class="row align-items-center">
+        <div class="col h-100 bg3c text-center">
+
+          <h1 class="display-2 mt-4 mb-2 white-text">Activity #3</h1>
+          <p class="lead white-text mb-5">Read <a href="https://www.today.com/tmrw/how-livestream-concerts-are-helping-musicians-impacted-covid-19-t201913" target="_blank">How livestream concerts are helping musicians impacted by COVID-19</a> 
           then answer the questions below:</p>
 
           <div class="card my-5 mx-auto" style="width: 70%; height: 60%">
             <div class="card-body">
-
-              <h2 class="display-6 my-5" id="ex3question"></h2>
-              <button type="button" id="ex30" class="btn btn-primary btn-lg ex3btn"></button>
-              <button type="button" id="ex31" class="btn btn-primary btn-lg ex3btn"></button>
-              <button type="button" id="ex32" class="btn btn-primary btn-lg ex3btn"></button>
-
-              <p class="display-1 fs-3 my-3" id="ex3score">Score: 0/0</p>
-              <button type="button" id="ex3reset" class="btn btn-primary btn-lg" onclick="resetEX3()">Retry</button>
+              <h2 class="display-6 my-5" id="ex1question"></h2>
+              <button type="button" id="ex10" class="btn btn-primary btn-lg ex1btn"></button>
+              <button type="button" id="ex11" class="btn btn-primary btn-lg ex1btn"></button>
+              <p class="display-1 fs-3 my-3" id="ex1score">Score: 0/0</p>
+              <button type="button" id="ex1reset" class="btn btn-primary btn-lg" onclick="resetEX1()">Retry</button>
             </div>
           </div>
         </div>
       </row>
 
+  
+      <!-- Health and Fitness-->
+
+      <row class="row align-items-center" id="health-fitness">
+        <div class="col-lg text-center">
+          <h1 class="m-4 display-1">Health and Fitness</h1>
+
+          <p class="my-4 lead">During the COVID-19 pandemic, Americans have had many lifestyle changes that affect their health and fitness level.
+            While some of these changes have made it easier to stay healthy, others have made it harder.
+            With most things being virtual or cancelled, Americans have had a lot more time to devote to exercise.
+            Many people who otherwise didnt have time have been able to fit fitness into their schedule.
+            Some people have even gained a new passion for fitness that will likely continue well after the pandemic.
+            In addition, outdoors activities such as running, hiking, or biking have become popular.
+            To get an idea for just how much these activities grew, "Bike sales increased by more than 120%" (<a href="https://www.verywellfit.com/one-year-later-how-has-covid-19-affected-our-fitness-5113711">verywellfit.com</a>) leaving stores well out of stock.
+            These acitivites are really good for Americans health.
+            Not only does COVID-19 spread slower outdoors, the outside can improve our body's health after being inside all day.
+          </p>
+          <p class="my-4 lead">
+            Ofcourse, the pandemic has also caused many people's health to decrease.
+            Compared to before, the average person is "sitting an extra four hours per day" (<a href="https://www.verywellfit.com/one-year-later-how-has-covid-19-affected-our-fitness-5113711">verywillfit.com</a>). 
+            That also take into account all of the small movements you miss out on such as walking down the hall, or into work.
+            Without making up for that time with exercise, you will inevitably gain weight.
+            There are also many reasons someone may have decreased their amount of exercise.
+            When sports cancelled and gyms closed, someone may have given up and not decided to go out and try something new.
+            In addition to physical fitness, COVID can also affect mental health.
+            The isolation and additional stress people face in the pandemic has caused "about 4 in 10 adults in the U.S. [to report] symptoms of anxiety or depressive disorder" (<a href="https://www.kff.org/coronavirus-covid-19/issue-brief/the-implications-of-covid-19-for-mental-health-and-substance-use/">kff.org</a>).
+            
+          </p>
+        </div>
+      </row>
+      <row class="row align-items-center">
+        <div class="col-lg">
+          <figure class="figure">
+            <img src="https://cms.qz.com/wp-content/uploads/2019/11/Peloton-Bike-Lifestyle-04-e1572983208724.jpg?quality=75&strip=all&w=1600&h=900&crop=1" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">Peleton: A virtual biking platform that has boomed in popularity since the beginning of the pandemic. Image via <a href="https://qz.com/1742728/peloton-doubled-its-subscribers-but-growth-is-slowing/">qz.com</a></figcaption>
+          </figure>
+        </div>
+      </row>
+
+      <!-- Health and Fitness Activity-->
+      <row class="row align-items-center">
+        <div class="col h-100 bg3c text-center">
+          <h1 class="display-2 mt-4 mb-2 white-text">Activity #4</h1>
+          <p class="lead white-text mb-5">Read <a href="https://www.mindbodyonline.com/business/education/blog/virtual-workout-trends-during-shelter-home" target="_blank">Virtual Workout Trends During Shelter at Home</a>
+          then answer the questions below:</p>
+
+          <div class="card my-5 mx-auto" style="width: 70%; height: 60%">
+            <div class="card-body">
+
+              <h2 class="display-6 my-5" id="ex4question"></h2>
+              <button type="button" id="ex40" class="btn btn-primary btn-lg ex4btn"></button>
+              <button type="button" id="ex41" class="btn btn-primary btn-lg ex4btn"></button>
+              <button type="button" id="ex42" class="btn btn-primary btn-lg ex4btn"></button>
+
+              <p class="display-1 fs-3 my-3" id="ex4score">Score: 0/0</p>
+              <button type="button" id="ex4reset" class="btn btn-primary btn-lg" onclick="resetEX4()">Retry</button>
+            </div>
+          </div>
+        </div>
+      </row>
+
+      <!-- Families -->
+      <row class="row im3 align-items-center" id="family-life">
+        <div class="col-lg h-100 bg3copacity text-center">
+          <h1 class="display-1 my-4 white-text">Family Life</h1>
+          <p class="lead white-text m-4">
+            This pandemic has caused a lot change in the average family's daily life.
+            First, routine and schedules have been greatly affected.
+            Anything from meal times to morning rituals have had some sort of change since the pandemic.
+            Families are also spending a lot more time together. 
+            Pre-pandemic, many families only saw eachother before and after the workday. 
+            Now, everyone is stuck in the same home, almost all the time!
+            Parents have also suddenly had to take on a lot more responsability.
+            Not only do they need to focus on their own work during the day, they also need to watch children and make sure they are completing their school work.
+            All of these things add up creating stress and tension between family members. 
+          </p>
+        </div>
+
+        <div class="col-lg h-100 bg3copacity">
+          <h4 class="my-4 text-center white-text">Some ways to help maintain healthy family relationships during these times:</h4>
+          <ul class="list-group my-4 white-text">
+            <li class="list-group-item">
+              <p class="lead">
+                Schedule family activities such as watching entertainment, working on a project, or playing games.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Exercise (either together or alone) and maintain a healthy lifestyle to reduce stress. 
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                If possible, take time and space for yourself.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Communicate how you are feeling and address concerns when they come up.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="lead">
+                Plan routines with others so your limited available space can be shared.
+              </p>
+            </li>
+          </ul>
+          <p class="lead white-text text-end">Strategy ideas from <a href="https://health.clevelandclinic.org/too-much-family-time-during-the-pandemic-heres-how-to-cope/">health.clevelandclinic.org</a> and <a href="https://www.nspcc.org.uk/keeping-children-safe/support-for-parents/arguments-conflict-family-tension-coronavirus-lockdown/">nspcc.org</a></p>
+        </div>
+      </row>
+
     </main>
+
+    <button class="btn btn-primary" id="scroll-top" data-scroll="up" type="button">
+      <i class="bi-arrow-up" style="font-size: 2rem;"></i>
+    </button>
 
   </body>
 
+ 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
   <script src="js/ex1.js"></script>
   <script src="js/ex2.js"></script>
   <script src="js/ex3.js"></script>
+  <script src="js/ex4.js"></script>
 </html>
